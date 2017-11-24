@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Just a Grid Documentation</title>
+  <meta name="description" content="Documenation for justAGrid">
+  <meta name="author" content="Dylan Gardner">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/justAGrid.css">
+  <style>
+    .row .ex {
+      text-align: center; 
+      padding: 5px;
+      background-color: #E5E5E5;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="one-third column" style="margin-top: 15%">
+        <h1>Just a Grid Documenation.</h1>
+        <hr>
+        <p>Here you'll find the documenation for justAGrid.<br><br>I only used 6 lines of css defined in the head and the justAGrid.css stylesheet to give a grid.<br><br><a href="../index.html">Go Home</a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="tweleve column" style="margin-top: 10%">
+        <h3>The Grid</h3>
+        <p>Every grid has a container and a row (by default it has a max width of 960px):</p>
+        <code><pre>
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+        </pre></code>
+        <br>
+        <p>Each element in a row can have a width like so:</p>
+        <pre>
+          <code>
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="one column"&gt;One&lt;/div&gt;
+    &lt;div class="eleven columns">Eleven&lt;/div&gt;
+    ...
+  &lt;/div&gt;
+    
+  &lt;div class="row"&gt;
+    &lt;div class="one-third column"&gt;1/3&lt;/div&gt;
+    &lt;div class="two-thirds column"&gt;2/3&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="row"&gt;
+    &lt;div class="one-half column"&gt;1/2&lt;/div&gt;
+    &lt;div class="one-half column"&gt;1/2&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+        </pre>
+        <b>Using the example above and a couple basic styles:</b>
+        <br><br>
+        <div>
+          <div class="row">
+            <div class="one column ex">One</div>
+            <div class="eleven columns ex">Eleven</div>
+          </div>
+          <div class="row">
+            <div class="two columns ex">Two</div>
+            <div class="ten columns ex">Ten</div>
+          </div>
+          <div class="row">
+            <div class="three columns ex">Three</div>
+            <div class="nine columns ex">Nine</div>
+          </div>
+          <div class="row">
+            <div class="four columns ex">Four</div>
+            <div class="eight columns ex">Eight</div>
+          </div>
+          <div class="row">
+            <div class="five columns ex">Five</div>
+            <div class="seven columns ex">Seven</div>
+          </div>
+          <div class="row">
+            <div class="six columns ex">Six</div>
+            <div class="six columns ex">Six</div>
+          </div>
+          <div class="row">
+            <div class="seven columns ex">Seven</div>
+            <div class="five columns ex">Five</div>
+          </div>
+          <div class="row">
+            <div class="eight columns ex">Eight</div>
+            <div class="four  columns ex">Four</div>
+          </div>
+          <div class="row">
+            <div class="nine columns ex">Nine</div>
+            <div class="three columns ex">Three</div>
+          </div>
+          <div class="row">
+            <div class="ten columns ex">Ten</div>
+            <div class="two columns ex">Two</div>
+          </div>
+          <div class="row">
+            <div class="eleven columns ex">Eleven</div>
+            <div class="one column ex">One</div>
+          </div>
+           <div class="row">
+            <div class="twelve column ex">Twelve</div>
+          </div>
+          <div class="row">
+            <div class="one-third column ex">1/3</div>
+            <div class="two-thirds column ex">2/3</div>
+          </div>
+          <div class="row">
+            <div class="one-half column ex">1/2</div>
+            <div class="one-half column ex">1/2</div>
+          </div>
+        </div>
+        <br>
+        <p>You can also offset stuff... </p>
+         <pre>
+          <code>
+&lt;div class="container"&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="offset-by-one eleven columns"&gt;Offset by One&lt;/div&gt;
+   &lt;/div&gt;
+   &lt;div class="row"&gt;
+    &lt;div class="offset-by-ten two columns">Offset by Ten&lt;/div&gt;
+  &lt;/div&gt;
+  
+  &lt;div class="row"&gt;
+    &lt;div class="offset-by-one-third two-thirds column">Offset by One Third&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="row"&gt;
+    &lt;div class="offset-by-one-half one-half column">Offset by One Half&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code>
+        </pre>
+        <b>Using the example above and a couple basic styles:</b>
+        <br><br>
+        <div>
+          <div class="row">
+            <div class="offset-by-one eleven columns ex">Offset by One</div>
+          </div>
+          <div class="row">
+            <div class="offset-by-ten two columns ex">Offset by Ten</div>
+          </div>
+          <div class="row">
+            <div class="offset-by-one-third two-thirds column ex">Offset by One Third</div>
+          </div>
+          <div class="row">
+            <div class="offset-by-one-half one-half column ex">Offset by One Half</div>
+          </div>
+        </div>
+        <h3 style="margin-top: 10%; margin-bottom: 5%;">So... That's it. Look at the <a href="https://github.com/dylngg/justAGrid">115 lines of css code</a> if you need more insight.</h3>
+        <a href="../index.html">&lt; Go Home</a>
+        <a href="../LICENSE.md" style="margin-top: 10px; display:block; margin-bottom: 10px;">View License</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
