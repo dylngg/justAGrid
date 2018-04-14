@@ -1,5 +1,5 @@
 # JustAGrid
-JustAGrid is a basic stylesheet that adds grid funtionality to a page without adding any styling. 
+JustAGrid is a basic stylesheet that adds grid funtionality to a page without adding any styling. (Though you should probably just use flexbox or the css grid layout)
 
 ## Getting Started
 
@@ -8,7 +8,7 @@ To get started, just download the folder and move the css file into wherever you
 Then, just read up on the docs in docs/index.html
 
 ## Why you should care about it
-I know you could probably just use flexbox for a basic grid. However, justAGrid provides similar functionality and a simple usage while supporting every browser since IE8. It's perfect for a basic website, where you want a grid, but don't want all those styles that come with other grid frameworks.
+You shouldn't. You should probably just use flexbox or the css grid layout. ~~However, justAGrid provides similar functionality and a simple usage while supporting every browser since IE8. It's perfect for a basic website, where you want a grid, but don't want all those styles that come with other grid frameworks~~.
 
 Plus, 
 - It's only 115 lines of code unminified
